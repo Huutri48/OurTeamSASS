@@ -1,0 +1,61 @@
+@import "./helpers/variables";
+@import "./base/reset";
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/teach";
+@import "./layout/find";
+@import "./layout/footer";
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  header {
+    nav {
+      text-align: center;
+      .nav-item:hover {
+        color: $color-pink !important;
+      }
+    }
+    .active,
+    .nav-item:hover {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .about {
+    .text {
+      padding-top: 1rem;
+      margin-left: 50px;
+    }
+  }
+  .teach {
+    .col-12.col-md-6.col-lg-4.col-xl-3.pl-4.pr-4 {
+      margin-bottom: 50px;
+    }
+  }
+  .find {
+    input:nth-child(2),
+    input:nth-child(4) {
+      max-width: 100% !important;
+    }
+    .fa-envelope {
+      margin-top: 2.3rem !important;
+      margin-left: 1.3rem !important;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width

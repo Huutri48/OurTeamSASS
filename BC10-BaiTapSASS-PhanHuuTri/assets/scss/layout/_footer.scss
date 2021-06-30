@@ -1,0 +1,78 @@
+
+
+
+footer {
+    background-image: url(../img/footer_background.jpg);
+    padding-bottom: 11.25rem;
+    background-size: cover;
+    background-position: center bottom;
+  padding-top: 100px;
+    h1 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    p,
+    .far,
+    .fab,
+    .fas {
+      font-size: 0.8rem;
+    }
+    p {
+      margin-left: 1.25rem;
+    }
+    .fab {
+      &:hover {
+        color: black !important;
+      }
+    }
+    .far,
+    .fas {
+      position: absolute;
+      margin-top: 0.1875rem;
+    }
+    .line {
+      border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+      a {
+        font-size: 0.8rem;
+        display: inline-block;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  
+    input,
+    button {
+      width: 100%;
+      padding: 0.625rem 0;
+      text-align: center;
+      border-radius: 3.125rem;
+  
+      font-size: 0.8rem;
+    }
+    input {
+      border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+      background-color: $color-footer;
+      opacity: 1;
+      text-shadow: white;
+      &:focus {
+        border: 0.0625rem solid rgba(255, 255, 255, 1);
+      }
+    }
+    input[type="text"] {
+      color: white;
+    }
+    ::placeholder {
+      color: white;
+    }
+    button {
+      &:hover {
+        transition: all 300ms ease;
+        background-color: $color-footer;
+        border: 0.0625rem solid rgba(255, 255, 255, 1);
+        color: white;
+      }
+    }
+  }
+  

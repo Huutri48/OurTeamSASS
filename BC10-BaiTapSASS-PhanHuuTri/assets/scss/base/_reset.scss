@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    
+}
+a{
+    color: initial;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.container-fluid {
+    max-width: 78.75rem;
+    margin: auto;
+    padding: initial;
+  }
+  span,input,textarea,button{
+    outline: none!important;
+    border: initial;
+    font-weight: bolder;
+  }

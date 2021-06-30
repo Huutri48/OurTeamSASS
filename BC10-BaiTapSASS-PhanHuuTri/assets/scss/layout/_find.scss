@@ -1,0 +1,99 @@
+.find {
+  margin-top: 4rem;
+  background-image: url(../img/accent_bottom_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  img {
+    width: 32.875rem;
+  }
+  .row {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    .col-6.mt-2 {
+      padding: 0 7rem;
+    }
+    .item {
+      padding: 0 1.5625rem;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0 1.875rem 1.875rem -0.625rem rgba(0, 0, 0, 0.2);
+      border-radius: 1.25rem;
+      .content {
+        font-size: 0.8rem;
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 3.125rem;
+        }
+        input,
+        span {
+          color: #877c75;
+          border-radius: 6.25rem;
+          width: 100%;
+          padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+          border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-menu.show {
+          right: 0;
+        }
+        .dropdown-item {
+          font-size: 0.8rem;
+          color: #877c75;
+          &:hover {
+            background-color: transparent;
+            color: $color-pink;
+          }
+        }
+
+        .dropdown-toggle {
+          &:after {
+            float: right;
+            margin-top: 0.5rem;
+            color: $color-pink;
+            opacity: 0.5;
+            clear: both;
+          }
+        }
+        input:nth-child(2),
+        input:nth-child(4) {
+          max-width: 16rem;
+        }
+        textarea {
+          border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+          padding: 0.5rem 2.5rem;
+          width: 100%;
+          height: 5.625rem;
+          border-radius: 1.25rem;
+        }
+        button {
+          letter-spacing: 0.0625rem;
+          font-weight: 600;
+          line-height: 1;
+          border: none;
+          background-color: $color-pink;
+          padding: 1.25rem 3.75rem;
+          border-radius: 3.125rem;
+          color: white;
+          font-weight: initial;
+          &:hover {
+            color: $color-pink;
+            background: white;
+            box-shadow: 0 0 0 0.0625rem $color-pink inset;
+            transition: all 300ms ease;
+          }
+        }
+        .far,
+        .fas {
+          position: absolute;
+          margin-top: 0.8rem;
+          margin-left: 1.3rem;
+          color: $color-pink;
+        }
+        .fa-envelope {
+          margin-left: 1.8125rem;
+        }
+      }
+    }
+  }
+}
